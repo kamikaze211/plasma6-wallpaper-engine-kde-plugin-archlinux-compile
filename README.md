@@ -2,7 +2,8 @@
 a compiling tutorial for wallpaper-engine-kde-plugin on archlinux
 
 #安装依赖
-```sudo pacman -S extra-cmake-modules plasma-framework5 gst-libav base-devel mpv python-websockets qt5-declarative qt5-websockets qt5-webchannel vulkan-headers cmake
+```
+sudo pacman -S extra-cmake-modules plasma-framework5 gst-libav base-devel mpv python-websockets qt5-declarative qt5-websockets qt5-webchannel vulkan-headers cmake
 ```
 
 #删除以前编译安装过的资源文件（系统+家目录）
