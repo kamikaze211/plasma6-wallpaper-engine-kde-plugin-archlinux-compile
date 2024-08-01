@@ -40,7 +40,6 @@ git submodule update --init --force --recursive
 ```
 
 # 配置，构建，安装
-# 'USE_PLASMAPKG=ON': using kpackagetool tool to install plugin
 ```
 cmake -B build -S . -GNinja -DUSE_PLASMAPKG=ON
 sudo cmake --build build
