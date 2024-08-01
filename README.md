@@ -22,7 +22,9 @@ sudo rm -rf /usr/lib/qt6/qml/com/github/casout/
 ```
 
 #删除后先重启下plasmashell，避免出现问题？
-```systemctl --user restart plasma-plasmashell.service```
+```
+systemctl --user restart plasma-plasmashell.service
+```
 
 
 # 切换分支下载源码
@@ -32,7 +34,9 @@ cd wallpaper-engine-kde-plugin
 ```
 
 # 下载submodule
-```git submodule update --init --force --recursive```
+```
+git submodule update --init --force --recursive
+```
 
 # 配置，构建，安装
 # 'USE_PLASMAPKG=ON': using kpackagetool tool to install plugin
@@ -43,7 +47,9 @@ cmake --install build
 ```
 
 # Install package (ignore if USE_PLASMAPKG=OFF for system-wide installation)
-```cmake --build build --target install_pkg```
+```
+cmake --build build --target install_pkg
+```
 
 # 编译场景壁纸插件
 ```
@@ -53,7 +59,11 @@ cmake .. -DCMAKE_BUILD_TYPE=Release -DBUILD_QML=ON
 make -j$nproc
 ```
 #检查场景壁纸插件是否编译成功
-```./sceneviewer --help```
+```
+./sceneviewer --help
+```
 
 #重启plasmashell，以显示在壁纸菜单中
-```systemctl --user restart plasma-plasmashell.service```
+```
+systemctl --user restart plasma-plasmashell.service
+```
