@@ -1,6 +1,11 @@
 # plasma6-wallpaper-engine-kde-plugin-archlinux-compile
 a compiling tutorial for wallpaper-engine-kde-plugin on archlinux
 
+# The origin project is here:
+```
+https://github.com/catsout/wallpaper-engine-kde-plugin
+```
+
 #安装依赖
 ```
 sudo pacman -S extra-cmake-modules plasma-framework5 gst-libav base-devel mpv python-websockets qt5-declarative qt5-websockets qt5-webchannel vulkan-headers cmake
